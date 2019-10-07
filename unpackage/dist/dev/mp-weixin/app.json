@@ -11,12 +11,18 @@
     "pages/changePwd/changePwd",
     "pages/about-us/about-us",
     "pages/12change-p/12change-p",
+    "pages/guessIndex/guessIndex",
     "pages/guess/guess",
     "pages/openVip/openVip",
-    "pages/inform/inform"
+    "pages/inform/inform",
+    "pages/massage/massage",
+    "pages/systemT/systemT",
+    "pages/account/account",
+    "pages/accountBind/accountBind",
+    "pages/liveEvent/liveEvent",
+    "pages/gameInfo/gameInfo"
   ],
   "subPackages": [],
   "window": {},
-  "usingComponents": {},
-  "sitemapLocation": "sitemap.json"
+  "usingComponents": {}
 }

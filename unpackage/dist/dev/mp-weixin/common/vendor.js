@@ -7489,9 +7489,9 @@ module.exports = g;
 
 /***/ }),
 /* 4 */
-/*!****************************************************************!*\
-  !*** D:/Development Eproject/HbuilderXproject/足球预测/pages.json ***!
-  \****************************************************************/
+/*!**************************!*\
+  !*** F:/足球预测/pages.json ***!
+  \**************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8393,20 +8393,20 @@ module.exports = {"_from":"@dcloudio/uni-stat@next","_id":"@dcloudio/uni-stat@2.
 
 /***/ }),
 /* 7 */
-/*!*********************************************************************************!*\
-  !*** D:/Development Eproject/HbuilderXproject/足球预测/pages.json?{"type":"style"} ***!
-  \*********************************************************************************/
+/*!*******************************************!*\
+  !*** F:/足球预测/pages.json?{"type":"style"} ***!
+  \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/login/login": { "navigationBarTitleText": "登录" }, "pages/login2/login2": { "navigationBarTitleText": "登录" }, "pages/register/register": { "navigationBarTitleText": "注册" }, "pages/findpwd/findpwd": { "navigationBarTitleText": "找回密码" }, "pages/binding/binding": { "navigationBarTitleText": "绑定手机号" }, "pages/personal/personal": { "navigationBarTitleText": "个人中心" }, "pages/pdata/pdata": { "navigationBarTitleText": "个人资料" }, "pages/mtn/mtn": { "navigationBarTitleText": "修改昵称" }, "pages/changePwd/changePwd": { "navigationBarTitleText": "修改密码" }, "pages/about-us/about-us": { "navigationBarTitleText": "个人中心" }, "pages/12change-p/12change-p": { "navigationBarTitleText": "换绑手机号" }, "pages/guess/guess": { "navigationBarTitleText": "软件名称" }, "pages/openVip/openVip": { "navigationBarTitleText": "开通Vip" }, "pages/inform/inform": { "navigationBarTitleText": "消息通知" } }, "globalStyle": {} };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/login/login": { "navigationBarTitleText": "登录", "usingComponents": {} }, "pages/login2/login2": { "navigationBarTitleText": "登录", "usingComponents": {} }, "pages/register/register": { "navigationBarTitleText": "注册", "usingComponents": {} }, "pages/findpwd/findpwd": { "navigationBarTitleText": "找回密码", "usingComponents": {} }, "pages/binding/binding": { "navigationBarTitleText": "绑定手机号", "usingComponents": {} }, "pages/personal/personal": { "navigationBarTitleText": "个人中心", "usingComponents": {} }, "pages/pdata/pdata": { "navigationBarTitleText": "个人资料", "usingComponents": { "uni-popup": "/components/uni-popup/uni-popup" } }, "pages/mtn/mtn": { "navigationBarTitleText": "修改昵称", "usingComponents": {} }, "pages/changePwd/changePwd": { "navigationBarTitleText": "修改密码", "usingComponents": {} }, "pages/about-us/about-us": { "navigationBarTitleText": "个人中心", "usingComponents": {} }, "pages/12change-p/12change-p": { "navigationBarTitleText": "换绑手机号", "usingComponents": {} }, "pages/guessIndex/guessIndex": { "navigationBarTitleText": "软件名称", "usingComponents": {} }, "pages/guess/guess": { "navigationBarTitleText": "软件名称", "usingComponents": {} }, "pages/openVip/openVip": { "navigationBarTitleText": "开通Vip", "usingComponents": { "uni-popup": "/components/uni-popup/uni-popup" } }, "pages/inform/inform": { "navigationBarTitleText": "消息通知", "usingComponents": {} }, "pages/massage/massage": { "navigationBarTitleText": "消息通知", "usingComponents": {} }, "pages/systemT/systemT": { "navigationBarTitleText": "系统通知", "usingComponents": {} }, "pages/account/account": { "navigationBarTitleText": "账户明细", "usingComponents": {} }, "pages/accountBind/accountBind": { "navigationBarTitleText": "账户绑定", "usingComponents": {} }, "pages/gameInfo/gameInfo": { "navigationBarTitleText": "比赛信息", "usingComponents": {} }, "pages/loveEvent/loveEvent": { "usingComponents": {} }, "pages/liveEvent/liveEvent": { "navigationBarTitleText": "赛事直播", "usingComponents": {} } }, "globalStyle": {} };exports.default = _default;
 
 /***/ }),
 /* 8 */
-/*!********************************************************************************!*\
-  !*** D:/Development Eproject/HbuilderXproject/足球预测/pages.json?{"type":"stat"} ***!
-  \********************************************************************************/
+/*!******************************************!*\
+  !*** F:/足球预测/pages.json?{"type":"stat"} ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

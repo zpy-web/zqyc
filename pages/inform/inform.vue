@@ -8,20 +8,20 @@
 		</view>
 		<!-- 信息message -->
 		<view class="message">
-			<text>2019-10-05&nbsp;22:38:45</text>
-			<text class="fonts">消息内容消息内容消息内容消息内容消息内容...</text>
+			<text>2019-10-05&nbsp;22:39:45</text>
+			<text class="fonts">消息内容消息内容消息内容消息内容消息内容消息内容...</text>
 		</view>
 		<view class="message">
-			<text>2019-10-05&nbsp;22:38:45</text>
-			<text class="fonts">消息内容消息内容消息内容消息内容消息内容...</text>
+			<text>2019-10-05&nbsp;22:39:45</text>
+			<text class="fonts">消息内容消息内容消息内容消息内容消息内容消息内容...</text>
 		</view>
 		<view class="message">
-			<text>2019-10-05&nbsp;22:38:45</text>
-			<text class="fonts">消息内容消息内容消息内容消息内容消息内容...</text>
+			<text>2019-10-05&nbsp;22:39:45</text>
+			<text class="fonts">消息内容消息内容消息内容消息内容消息内容消息...</text>
 		</view>
 		<view class="message">
-			<text>2019-10-05&nbsp;22:38:45</text>
-			<text class="fonts">消息内容消息内容消息内容消息内容消息内容...</text>
+			<text>2019-10-05&nbsp;22:39:45</text>
+			<text class="fonts">消息内容消息内容消息内容消息内容消息内容消息...</text>
 		</view>
 	</view>
 </template>
@@ -53,6 +53,7 @@
 		font-size: 30rpx;
 		color: #b5b4b9;
 	}
+	// 点击是那条线
 	.active{
 		box-sizing: border-box;
 		border-bottom: 4rpx solid #eb303b;
@@ -72,7 +73,7 @@
 	text{
 		width: 100%;
 		display: flex;
-		font-size: 28rpx;
+		font-size: 26rpx;
 		color: #b5b4b9;
 	}
 	.fonts{

@@ -31,17 +31,50 @@
 		</view>
 		<!-- 购买 -->
 		<view class="footer">
-			<view>购买</view>
+			<button @click="openPopup">购买</button>
 		</view>
+		<!-- 支付 -->
+		<uni-popup ref="popup" type="bottom" :custom="true">
+			<view class="payStyle">
+				<view class="pay">
+					
+					<view class="fenx">
+						<image src="../../static/openVip/icon_zffs_16zftc.png" mode=""></image>
+						<text>请选择支付方式:</text>
+					</view>
+					<view class="pay-s">
+						<view class="pay-s1">
+							<image class="img-ml" src="../../static/openVip/icon_wxzf_16zftc.png" mode="">
+								<text>微信支付</text>
+							</image>
+						</view>
+						<view class="pay-s1">
+						<image  src="../../static/openVip/icon_zfb_16zftc.png" mode=""><text>支付宝</text></image>
+						</view>
+					</view>
+				</view>
+				<button @click="closePopup">取消</button>
+			</view>
+		</uni-popup>
 	</view>
 </template>
 
 <script>
+	import uniPopup from "@/components/uni-popup/uni-popup.vue"
 	export default {
+		components: {uniPopup},
 		data() {
 			return {
 				
 			};
+		},
+		methods:{
+			openPopup(){
+				this.$refs.popup.open()
+			},
+			closePopup(){
+				this.$refs.popup.close()
+			}
 		}
 	}
 </script>
@@ -116,8 +149,8 @@
 	display: flex;
 	justify-content: center;
 	width: 100%;
-	view{
-		margin-top: 118rpx;
+	button{
+		margin-top: 136rpx;
 		height: 94rpx;
 		width: 630rpx;
 		background-color: #ea303d;
@@ -126,6 +159,76 @@
 		line-height: 94rpx;
 		font-size: 36rpx;
 		color: #fff;
+	}
+}
+// 支付
+.payStyle{
+	width: 100%;
+	height: 464rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 28rpx;
+	.pay{
+		background: #fff;
+		width: 690rpx;
+		height: 310rpx;
+		border-radius: 20rpx;
+		
+		.fenx{
+			width: 100%;
+			height: 92rpx;
+			display: flex;
+			align-items: center;
+			
+			image{
+				height: 32rpx;
+				width: 6rpx;
+				margin-left: 20rpx;
+			}
+			text{
+				margin-left: 10rpx;
+			}
+		}
+		.pay-s{
+			border-top: 1rpx solid #f5f5f5;
+			width: 100%;
+			height: 218rpx;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			.pay-s1{
+				display: flex;
+				flex-direction: column;
+				text{
+					margin-top: 20rpx;
+					font-size: 30rpx;
+				}
+				image{
+					height: 74rpx;
+					width: 74rpx;
+					margin-left: 10rpx;
+				}
+				.img-ml{
+					height: 70rpx;
+					width: 86rpx;
+					
+				}
+			}
+		}
+	}
+	button{
+		background: #fff;
+		width: 690rpx;
+		height: 110rpx;
+		border-radius: 20rpx;
+		margin-top: 20rpx;
+		margin-bottom: 20rpx;
+		text-align: center;
+		line-height: 110rpx;
+		color: #979797;
+		font-size: 32rpx;
 	}
 }
 </style>
