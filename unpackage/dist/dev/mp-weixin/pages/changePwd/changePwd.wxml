@@ -1,0 +1,1 @@
+<view><view class="changepwd"><view class="changepwd-s"><image src="../../static/changePwd/icon_password_10xgmm.png"></image><input type="text" value="请输入原密码"/></view></view><view class="changepwd-s2"><image src="../../static/changePwd/icon_password_10xgmm.png"></image><input type="text" value="请输入新密码"/></view><view class="changepwd-yes">确定</view></view>
