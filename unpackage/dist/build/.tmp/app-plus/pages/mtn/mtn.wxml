@@ -1,0 +1,1 @@
+<view><view class="mtn"><text>请输入昵称</text></view><view class="mtn-x"><image src="../../static/9mtn/icon_gb_9xgnc.png" mode></image><input type="text" value="Jocelyn"/></view></view>

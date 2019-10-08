@@ -1,203 +1,209 @@
 <template>
-	<!-- 1 -->
 	<view>
-		<view class="header">
+		<!-- logo -->
+		<view class="logo">
 			<image src="../../static/login/icon_logo.png" mode=""></image>
 		</view>
-		<view class="banner">
-			<view class="banner-s">
-				<view class="banner-s1">
-					<image src="../../static/login/icon_iphone_dl.png" mode=""></image>
-					<input type="text" value="请输入手机号" />
+		<!-- 注册 -->
+		<view class="login">
+			<view class="login-s">
+				<image src="../../static/login/icon_iphone_dl.png" mode=""></image>
+				<input type="text"placeholder="请输入手机号" />
+			</view>
+			<view class="login-s login-t">
+				<image src="../../static/login/icon_password_dl.png" mode=""></image>
+				<input type="text" placeholder="请输入密码"/>
+			</view>
+			<view class="duanxin login-s">
+				<navigator :url="duanxin">短信登录</navigator>
+				<navigator :url="findpwd">找回密码</navigator>
+			</view>
+		</view>
+		<!-- 按钮 -->
+		<view class="register">
+			<view class="yes">
+				<view class="yes-s">
+					<image src="../../static/login/icon_dh-dl.png"></image>
 				</view>
-				<view class="banner-s2">
-					<image src="../../static/login/icon_password_dl.png" mode=""></image>
-					<input type="text" value="请输入密码" />
+				<text>同意用户协议</text>
+			</view>
+			<view class="register-c">
+				<view class="register-s">
+					<navigator :url="personal">登录</navigator>
 				</view>
-				<view class="banner-s3">
-					<text>短信登陆</text>
-					<text>找回密码</text>
+				<view class="register-s">
+					<navigator :url="register">注册</navigator>
 				</view>
 			</view>
 		</view>
-		<!-- login+register -->
-		<view class="section">
-				<view class="section-s">
-					<view class="section-s1">
-						<view class="yes">
-							<image src="../../static/login/icon_dh-dl.png" mode="" style="width: 24rpx; height: 24rpx;"></image>
-						</view>
-						
-						<text>同意用户协议</text>
-					</view>
-					<view class="section-s2">
-						<view class="section-bg">登录</view>
-						<view class="section-bg">注册</view>
-					</view>
-				</view>
-				
-		</view>
-		<!-- 第三方登陆 -->
-		<view class="others">
-			<view class="lines"></view>
-			<view class="fonts">
+		<!-- 第三方登录 -->
+		<view class="footer">
+			<view class="footer-b">
 				第三方登录
 			</view>
-			<view class="lines"></view>
-		</view>
-		<!-- qq+wx -->
-		<view class="footer">
-			<image src="../../static/login/icon_wx_dl.png" mode=""></image>
-			<image src="../../static/login/icon_qq_dl.png" mode=""></image>
+			<view class="footer-r">
+				<view class="footer-rs">
+					<image src="../../static/login/icon_wx_dl.png" mode=""></image>
+				</view>
+				<view class="footer-rs">
+					<image src="../../static/login/icon_qq_dl.png" mode=""></image>
+				</view>
+				
+			</view>
 		</view>
 	</view>
+	
 </template>
 
 <script>
 	export default {
 		data() {
 			return {
-				
-			}
-		},
-		onLoad() {
-
-		},
-		methods: {
-
+				// 短信登陆
+				duanxin:'../login/login2',
+				// 注册
+				register:'../login/register',
+				// 找回密码
+				findpwd:'../login/findpwd',
+				// 登录到个人主页
+				personal:'../user/personal'
+			};
 		}
 	}
 </script>
 
-<style>
-	page{background-color: #000;}
-	/* 登陆 logo */
-	/* ipone+password+短信 */
-	.header{
-		height: 208rpx;
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		
-	}
-	.header image{
+<style lang="scss">
+page{background: #000000;}
+.logo{
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 380rpx;
+	width: 100%;
+	image{
 		width: 166rpx;
 		height: 166rpx;
-		margin-top: 42rpx;
 	}
-	.banner{
-		height: 364rpx;
-		width: 100%;
-		padding-top: 110rpx;
-		box-sizing: border-box;
-	}
-	.banner .banner-s{
-		height: 254rpx;
-		width: 634rpx;
-		margin-left: 54rpx;
+}
+.login{
+	height: 260rpx;
+	width: 100%;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	font-size: 28rpx;
+	color: #919191;
+	.login-s{
+		width: 630rpx;
+		flex-direction: row;
 		display: flex;
-		flex-direction: column;
+		border-bottom: 1rpx solid #919191;
+		height: 66rpx;
+		align-items: center;
+		input{
+			margin-left: 30rpx;
+		}
 	}
-	.banner .banner-s .banner-s1{
-		width: 100%;
-		height: 60rpx;
-		display: flex;
-		border-bottom: 2rpx solid #bfbfbf;
-		padding-left: 2rpx;
-		box-sizing: border-box;
-	}
-	.banner .banner-s .banner-s1 image{
-		width: 34rpx;
-		height: 48rpx;
-		margin-left: 2rpx;
-	}
-	.banner .banner-s .banner-s1 input{
-		color: #bfbfbf;
-		font-size: 28rpx;
-		margin-left: 32rpx;
+	.login-t{
+		margin-top: 54rpx;
 		
 	}
-	.banner .banner-s .banner-s2{
-		width: 100%;
-		height: 142rpx;
-		border-bottom: 2rpx solid #bfbfbf;
-		padding-left: 2rpx;
-		box-sizing: border-box;
-		display: flex;
-	}
-	.banner .banner-s .banner-s2 image{
+	image{
 		width: 40rpx;
 		height: 48rpx;
-		margin-left: 2rpx;
-		margin-top: 80rpx;
 	}
-	.banner .banner-s .banner-s2 input{
-		color: #bfbfbf;
-		font-size: 28rpx;
-		margin-left: 32rpx;
-		margin-top: 88rpx;
-		
-	}
-	.banner .banner-s .banner-s3{
-		width: 100%;
-		height: 52rpx;
-		padding-top: 10rpx;
-		box-sizing: border-box;
-		font-size: 28rpx;
-		color: #BFBFBF;
-	}
-	.banner .banner-s .banner-s3 text:first-child{float: left;}
-	.banner .banner-s .banner-s3 text:last-child{float: right;}
-	/* login+register */
-	.section{width: 100%; height: 396rpx; display: flex; justify-content: center; align-items: center;}
-	.section-s{width: 642rpx; height: 100%; }
-	.section-s .section-s1{ height: 104rpx;padding-left: 20rpx;padding-top: 52rpx; box-sizing: border-box;display: flex;}
-	.section-s .section-s1 .yes{
-		width: 32rpx;
-		height: 32rpx;
-		background-image: url(../../static/login/icon_xy_dl.png);
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
-		text-align: center;
-		line-height: 32rpx;
-	}
-	.section-s .section-s1 text{margin-left: 10rpx; font-size: 24rpx; color: #e8e8e8;}
-	.section-s .section-s2{ height: 292rpx;}
-	.section-s .section-s2 .section-bg{
-		width: 640rpx;
-		height: 84rpx;
-		margin-top: 20rpx;
-		background-image: url(../../static/login/login_btn.png);
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
-		font-size: 36rpx;
-		text-align: center;
-		line-height: 84rpx;
-		color: #FFFFFF;
-		}
-	/* 第三方登陆  */
-	.others{
-		width: 90%;
-		height:40rpx;
-		margin: 30rpx auto;
+	.duanxin{
+		margin-top: 10rpx;
 		display: flex;
 		justify-content: space-between;
+		flex-direction: row;
+		border: 0;
+	}
+}
+.register{
+	width: 630rpx;
+	justify-content: center;
+	margin: 0 auto;
+	height: 390rpx;
+	display: flex;
+	flex-direction: column;
+	font-size: 28rpx;
+	.yes{
+		display: flex;
+		flex-direction: row;
+		margin-left: 10rpx;
+		text{
+			margin-left: 10rpx;margin-top: -5rpx;
+			color: #fff;
+			font-size: 26rpx;
+		}
+		.yes-s{
+			border-radius: 50%;
+			background-color: red;
+			width: 32rpx;
+			height: 32rpx;
+			text-align: center;
+			line-height: 32rpx;
+			image{
+				width: 28rpx;
+				height: 28rpx;
+			}
+		}
+	}
+	.register-c{
+		display: flex;
+		justify-content: center;
 		align-items: center;
+		flex-direction: column;
+		font-size: 32rpx;
+		
 	}
-	.others .lines{
-		width: 256rpx;
-		height: 2rpx;
-		background-color: #bfbfbf;
+	.register-s{
+		width: 623rpx;
+		height: 80rpx;
+		background: url(../../static/login/login_btn.png);
+		background-size: 100% 100%;
+		text-align: center;
+		line-height: 80rpx;
+		color: #fff;
+		margin-top: 26rpx;
 	}
-	.others .fonts{
+}
+.footer{
+	width: 100%;
+	height: 200rpx;
+	display: flex;
+	flex-direction: column;
+	.footer-b{
 		color: #4c4c4c;
+		margin: 0 auto;
+		width: 90%;
+		height: 34rpx;
+		background: url(../../static/login/img_hr_dl.png);
+		background-repeat: no-repeat;
+		background-size:100% 1rpx;
+		background-position: center;
+		text-align: center;
+		line-height: 34rpx;
 		font-size: 28rpx;
 	}
-	/* qq+wx */
-	.footer{width: 100%;height: 102rpx;}
-	.footer image{
-		width: 86rpx;
-		height: 86rpx;
-		margin-left: 202rpx;
+	.footer-r{
+		margin-top: 36rpx;
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		height: 120rpx;
+		.footer-rs{
+			width: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		image{
+			width: 86rpx;
+			height: 86rpx;
+		}
 	}
+}
 </style>

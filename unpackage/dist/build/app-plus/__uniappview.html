@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+    <head>
+        <meta charset="UTF-8" />
+        <script>
+            var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+                CSS.supports('top: constant(a)'))
+            document.write(
+                '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+                (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+        </script>
+        <title>View</title>
+        <style>
+            * {
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            input[type="search"i]::-webkit-search-cancel-button {
+                display: none;
+            }
+        </style>
+        <script>
+            var __wxConfig = {"debug":false,"appname":"堇禾足球","entryPagePath":"pages/login/login.html","page":{"pages/login/login.html":{"window":{"navigationBarTitleText":"登录","usingComponents":{}}},"pages/login2/login2.html":{"window":{"navigationBarTitleText":"登录","usingComponents":{}}},"pages/register/register.html":{"window":{"navigationBarTitleText":"注册","usingComponents":{}}},"pages/findpwd/findpwd.html":{"window":{"navigationBarTitleText":"找回密码","usingComponents":{}}},"pages/binding/binding.html":{"window":{"navigationBarTitleText":"绑定手机号","usingComponents":{}}},"pages/personal/personal.html":{"window":{"navigationBarTitleText":"个人中心","usingComponents":{"uni-popup":"/components/uni-popup/uni-popup"}}},"pages/pdata/pdata.html":{"window":{"navigationBarTitleText":"个人资料","usingComponents":{"uni-popup":"/components/uni-popup/uni-popup"}}},"pages/mtn/mtn.html":{"window":{"navigationBarTitleText":"修改昵称","usingComponents":{}}},"pages/changePwd/changePwd.html":{"window":{"navigationBarTitleText":"修改密码","usingComponents":{}}},"pages/about-us/about-us.html":{"window":{"navigationBarTitleText":"个人中心","usingComponents":{}}},"pages/cipone/cipone.html":{"window":{"navigationBarTitleText":"换绑手机号","usingComponents":{}}},"pages/guessIndex/guessIndex.html":{"window":{"navigationBarTitleText":"软件名称","usingComponents":{}}},"pages/guess/guess.html":{"window":{"navigationBarTitleText":"软件名称","usingComponents":{}}},"pages/openVip/openVip.html":{"window":{"navigationBarTitleText":"开通Vip","usingComponents":{"uni-popup":"/components/uni-popup/uni-popup"}}},"pages/inform/inform.html":{"window":{"navigationBarTitleText":"消息通知","usingComponents":{}}},"pages/massage/massage.html":{"window":{"navigationBarTitleText":"消息通知","usingComponents":{}}},"pages/systemT/systemT.html":{"window":{"navigationBarTitleText":"系统通知","usingComponents":{}}},"pages/account/account.html":{"window":{"navigationBarTitleText":"账户明细","usingComponents":{}}},"pages/accountBind/accountBind.html":{"window":{"navigationBarTitleText":"账户绑定","usingComponents":{}}},"pages/liveEvent/liveEvent.html":{"window":{"navigationBarTitleText":"赛事直播","usingComponents":{}}},"pages/gameInfo/gameInfo.html":{"window":{"navigationBarTitleText":"比赛信息","usingComponents":{}}}},"global":{"window":{}},"tabBar":{"color":"","selectedColor":"","backgroundColor":"","borderStyle":"black","list":[],"position":"bottom"},"networkTimeout":{"request":60000,"connectSocket":60000,"uploadFile":60000,"downloadFile":60000},"platform":"devtools","pages":["pages/login/login","pages/login2/login2","pages/register/register","pages/findpwd/findpwd","pages/binding/binding","pages/personal/personal","pages/pdata/pdata","pages/mtn/mtn","pages/changePwd/changePwd","pages/about-us/about-us","pages/cipone/cipone","pages/guessIndex/guessIndex","pages/guess/guess","pages/openVip/openVip","pages/inform/inform","pages/massage/massage","pages/systemT/systemT","pages/account/account","pages/accountBind/accountBind","pages/liveEvent/liveEvent","pages/gameInfo/gameInfo"],"nvueCompiler":"uni-app","renderer":"auto","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"compilerVersion":"2.3.3","usingComponents":{}}
+        </script>
+        <script>
+            var __id__ = '';
+            window.__dispatchGenerateFunc__ = function(page) {
+                __id__ = page;
+                document.title = page;
+                // window.history.pushState('', '', page);
+                var wxss = page.replace('.html', '.wxss')
+                if (
+                    typeof __wxAppCode__ !== 'undefined' &&
+                    __wxAppCode__.hasOwnProperty(wxss)
+                ) {
+                    var setCssToHead = __wxAppCode__[wxss]
+                    typeof setCssToHead === 'function' && setCssToHead()
+                    document.dispatchEvent(new CustomEvent("generateFuncReady", {
+                        detail: {
+                            generateFunc: $gwx(page.replace('.html', '.wxml'))
+                        }
+                    }));
+                } else {
+                    plus.webview.currentWebview().setJsFile('_www/' + page.replace('.html', '.js'));
+                }
+            };
+        </script>
+        <script src="__uniappes6.js"></script>
+        <script src="uniapp://ready"></script>
+    </head>
+
+    <body>
+        <div></div>
+    </body>
+
+</html>

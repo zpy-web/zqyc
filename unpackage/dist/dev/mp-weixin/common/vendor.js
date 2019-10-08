@@ -733,7 +733,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -6978,7 +6978,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -6999,14 +6999,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -7082,7 +7082,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -8400,7 +8400,7 @@ module.exports = {"_from":"@dcloudio/uni-stat@next","_id":"@dcloudio/uni-stat@2.
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/login/login": { "navigationBarTitleText": "登录", "usingComponents": {} }, "pages/login2/login2": { "navigationBarTitleText": "登录", "usingComponents": {} }, "pages/register/register": { "navigationBarTitleText": "注册", "usingComponents": {} }, "pages/findpwd/findpwd": { "navigationBarTitleText": "找回密码", "usingComponents": {} }, "pages/binding/binding": { "navigationBarTitleText": "绑定手机号", "usingComponents": {} }, "pages/personal/personal": { "navigationBarTitleText": "个人中心", "usingComponents": {} }, "pages/pdata/pdata": { "navigationBarTitleText": "个人资料", "usingComponents": { "uni-popup": "/components/uni-popup/uni-popup" } }, "pages/mtn/mtn": { "navigationBarTitleText": "修改昵称", "usingComponents": {} }, "pages/changePwd/changePwd": { "navigationBarTitleText": "修改密码", "usingComponents": {} }, "pages/about-us/about-us": { "navigationBarTitleText": "个人中心", "usingComponents": {} }, "pages/12change-p/12change-p": { "navigationBarTitleText": "换绑手机号", "usingComponents": {} }, "pages/guessIndex/guessIndex": { "navigationBarTitleText": "软件名称", "usingComponents": {} }, "pages/guess/guess": { "navigationBarTitleText": "软件名称", "usingComponents": {} }, "pages/openVip/openVip": { "navigationBarTitleText": "开通Vip", "usingComponents": { "uni-popup": "/components/uni-popup/uni-popup" } }, "pages/inform/inform": { "navigationBarTitleText": "消息通知", "usingComponents": {} }, "pages/massage/massage": { "navigationBarTitleText": "消息通知", "usingComponents": {} }, "pages/systemT/systemT": { "navigationBarTitleText": "系统通知", "usingComponents": {} }, "pages/account/account": { "navigationBarTitleText": "账户明细", "usingComponents": {} }, "pages/accountBind/accountBind": { "navigationBarTitleText": "账户绑定", "usingComponents": {} }, "pages/gameInfo/gameInfo": { "navigationBarTitleText": "比赛信息", "usingComponents": {} }, "pages/loveEvent/loveEvent": { "usingComponents": {} }, "pages/liveEvent/liveEvent": { "navigationBarTitleText": "赛事直播", "usingComponents": {} } }, "globalStyle": {} };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/login/login": { "navigationBarTitleText": "登录", "usingComponents": {} }, "pages/login/login2": { "navigationBarTitleText": "登录", "usingComponents": {} }, "pages/login/register": { "navigationBarTitleText": "注册", "usingComponents": {} }, "pages/login/findpwd": { "navigationBarTitleText": "找回密码", "usingComponents": {} }, "pages/login/binding": { "navigationBarTitleText": "绑定手机号", "usingComponents": {} }, "pages/user/personal": { "navigationBarTitleText": "个人中心", "usingComponents": { "uni-popup": "/components/uni-popup/uni-popup" } }, "pages/user/pdata": { "navigationBarTitleText": "个人资料", "usingComponents": { "uni-popup": "/components/uni-popup/uni-popup" } }, "pages/user/mtn": { "navigationBarTitleText": "修改昵称", "usingComponents": {} }, "pages/user/changePwd": { "navigationBarTitleText": "修改密码", "usingComponents": {} }, "pages/user/about-us": { "navigationBarTitleText": "个人中心", "usingComponents": {} }, "pages/user/account": { "navigationBarTitleText": "账户明细", "usingComponents": {} }, "pages/user/cipone": { "navigationBarTitleText": "换绑手机号", "usingComponents": {} }, "pages/user/openVip": { "navigationBarTitleText": "开通Vip", "usingComponents": { "uni-popup": "/components/uni-popup/uni-popup" } }, "pages/guess/guessIndex": { "navigationBarTitleText": "软件名称", "usingComponents": {} }, "pages/guess/inform": { "navigationBarTitleText": "消息通知", "usingComponents": {} }, "pages/guess/massage": { "navigationBarTitleText": "消息通知", "usingComponents": {} }, "pages/guess/systemT": { "navigationBarTitleText": "系统通知", "usingComponents": {} }, "pages/user/accountBind": { "navigationBarTitleText": "账户绑定", "usingComponents": {} }, "pages/guess/liveEvent": { "navigationBarTitleText": "赛事直播", "usingComponents": {} }, "pages/guess/gameInfo": { "navigationBarTitleText": "比赛信息", "usingComponents": {} }, "pages/lo/lo": { "usingComponents": {} } }, "globalStyle": {} };exports.default = _default;
 
 /***/ }),
 /* 8 */

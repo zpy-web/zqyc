@@ -7,131 +7,130 @@
 			}
 		}
 	    ,{
-            "path" : "pages/login2/login2",
+            "path" : "pages/login/login2",
             "style" : {
 				"navigationBarTitleText": "登录"
 			}
         }
         ,{
-		    "path" : "pages/register/register",
+		    "path" : "pages/login/register",
 		    "style" : {
 				"navigationBarTitleText": "注册"
 			}
 		},
 		{
-		    "path" : "pages/findpwd/findpwd",
+		    "path" : "pages/login/findpwd",
 		    "style" : {
 				"navigationBarTitleText": "找回密码"
 			}
 		}
         ,{
-            "path" : "pages/binding/binding",
+            "path" : "pages/login/binding",
             "style" : {
 				"navigationBarTitleText": "绑定手机号"
 			}
         }
         
         ,{
-            "path" : "pages/personal/personal",
+            "path" : "pages/user/personal",
             "style" : {
 				"navigationBarTitleText": "个人中心"
 			}
         }
         ,{
-		    "path" : "pages/pdata/pdata",
+		    "path" : "pages/user/pdata",
 		    "style" : {
 				"navigationBarTitleText": "个人资料"
 			}
 		}    ,{
-            "path" : "pages/mtn/mtn",
+            "path" : "pages/user/mtn",
             "style" : {
 				"navigationBarTitleText": "修改昵称"
 			}
         }
         ,{
-            "path" : "pages/changePwd/changePwd",
+            "path" : "pages/user/changePwd",
             "style" : {
 				"navigationBarTitleText": "修改密码"
 			}
         }
         ,{
-            "path" : "pages/about-us/about-us",
+            "path" : "pages/user/about-us",
             "style" : {
 				"navigationBarTitleText": "个人中心"
 			}
         }
+		,{
+		    "path" : "pages/user/account",
+		    "style" : {
+				"navigationBarTitleText": "账户明细"
+			}
+		}
         ,{
-            "path" : "pages/12change-p/12change-p",
+            "path" : "pages/user/cipone",
             "style" : {
 				"navigationBarTitleText": "换绑手机号"
 			}
         }
+        ,{
+            "path" : "pages/user/openVip",
+            "style" : {
+				"navigationBarTitleText": "开通Vip"
+			}
+        }
 		,{
-		    "path" : "pages/guessIndex/guessIndex",
+		    "path" : "pages/guess/guessIndex",
 		    "style" : {
 				"navigationBarTitleText": "软件名称"
 			}
 		}
         ,{
-            "path" : "pages/guess/guess",
-            "style" : {
-				"navigationBarTitleText": "软件名称"
-			}
-        }
-        ,{
-            "path" : "pages/openVip/openVip",
-            "style" : {
-				"navigationBarTitleText": "开通Vip"
-			}
-        }
-        ,{
-            "path" : "pages/inform/inform",
+            "path" : "pages/guess/inform",
             "style" : {
 				"navigationBarTitleText": "消息通知"
 			}
         }
         ,{
-            "path" : "pages/massage/massage",
+            "path" : "pages/guess/massage",
             "style" : {
 				"navigationBarTitleText": "消息通知"
 			}
         }
         ,{
-            "path" : "pages/systemT/systemT",
+            "path" : "pages/guess/systemT",
             "style" : {
 				"navigationBarTitleText": "系统通知"
 			}
         }
+       
         ,{
-            "path" : "pages/account/account",
-            "style" : {
-				"navigationBarTitleText": "账户明细"
-			}
-        }
-        ,{
-            "path" : "pages/accountBind/accountBind",
+            "path" : "pages/user/accountBind",
             "style" : {
 				"navigationBarTitleText": "账户绑定"
 			}
         }
 		,{
-		    "path" : "pages/liveEvent/liveEvent",
+		    "path" : "pages/guess/liveEvent",
 		    "style" : {
 				"navigationBarTitleText": "赛事直播"
 			}
 		}
         ,{
-            "path" : "pages/gameInfo/gameInfo",
+            "path" : "pages/guess/gameInfo",
             "style" : {
 				"navigationBarTitleText": "比赛信息"
 			}
+        }
+        ,{
+            "path" : "pages/lo/lo",
+            "style" : {}
         }
     ],
 		 "condition": { //模式配置，仅开发期间生效
 		        "current": 0, //当前激活的模式（list 的索引项）
 		        "list": [{
 		            "name": "test", //模式名称
-		            "path": "pages/liveEvent/liveEvent" //启动页面，必选
+		            "path": "pages/lo/lo" //启动页面，必选
 		        }]
 		    },
 	"globalStyle": {
