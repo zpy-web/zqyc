@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/login/login2",
+    "pages/login/register",
+    "pages/login/findpwd",
+    "pages/login/binding",
+    "pages/user/personal",
+    "pages/user/pdata",
+    "pages/user/mtn",
+    "pages/user/changePwd",
+    "pages/user/about-us",
+    "pages/user/account",
+    "pages/user/cipone",
+    "pages/user/openVip",
+    "pages/user/accountBind",
+    "pages/guess/guessIndex",
+    "pages/guess/inform",
+    "pages/guess/massage",
+    "pages/guess/systemT",
+    "pages/guess/liveEvent",
+    "pages/guess/gameInfo",
+    "pages/guindex/guindex"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "black",
+    "backgroundColor": "black"
+  },
+  "nvueCompiler": "uni-app",
+  "renderer": "auto",
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "堇禾足球",
+  "compilerVersion": "2.3.3",
+  "usingComponents": {}
+}

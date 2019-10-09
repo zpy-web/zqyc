@@ -26,18 +26,12 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 0,
 			"list": [
 				{
 					"name": "test",
 					"id": 0,
-					"pathName": "pages/lo/lo"
-				},
-				{
-					"id": 1,
-					"name": "pages/login/login",
-					"pathName": "pages/login/login",
-					"query": ""
+					"pathName": "pages/guess/gameInfo"
 				}
 			]
 		}

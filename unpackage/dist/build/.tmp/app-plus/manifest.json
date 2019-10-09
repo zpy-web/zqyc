@@ -42,7 +42,7 @@
     "statusbar": {
       "immersed": "supportedDevice",
       "style": "light",
-      "background": "#000000"
+      "background": "black"
     },
     "usingComponents": true,
     "nvueCompiler": "uni-app",

@@ -1,6 +1,14 @@
 <template>
 	<!-- 13-竞猜首页 -->
-	<view>
+	<view >
+		 <view class="status_bar">
+		      <!-- 状态 -->
+		 </view>
+		 <view class="navigationBar">
+			 <navigator url="inform"><image  src="../../static/13guessIndex/icon_xxtz_13jcsy.png" mode=""></image></navigator>
+			 <text>软件名称</text>
+			 <navigator :url="personal"><image src="../../static/13guessIndex/icon_qcy_13jcsy.png" mode=""></image></navigator>
+		 </view> 
 		<view class="body">
 			<!-- 对话1 -->
 			<view class="guess-logo">
@@ -25,7 +33,9 @@
 			</view>
 			<!-- 球 -->
 			<view class="ball">
-				<image src="../../static/13guessIndex/icon_zq_13jcsy.png" mode=""></image>
+				<navigator url="liveEvent">
+					<image src="../../static/13guessIndex/icon_zq_13jcsy.png" mode=""></image>
+				</navigator>
 			</view>
 		</view>
 		<view class="footer">
@@ -37,23 +47,49 @@
 			<image src="../../static/13guessIndex/icon_xx_13jcsy.png" mode=""></image>
 			<image src="../../static/13guessIndex/icon_tj_13jcsy.png" mode=""></image>
 		</view>
+		
 	</view>
 </template>
 
 <script>
-	
+	export default{
+		data(){
+			return{
+				personal:'../user/personal'
+			}
+		}
+	}
 </script>
 
 <style lang="scss">
 	page {
 		background-color: #f5f4f9;
-		overflow: hidden;
 	}
-
+	 .status_bar {
+	      height: var(--status-bar-height);
+	      width: 100%;
+		  background-color: #000000;
+	  }
+	.navigationBar{
+		height: 88rpx;
+		width: 100%;
+		background-color: #000000;
+		color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 30rpx;
+		box-sizing: border-box;
+		font-size: 32rpx;
+		image{
+			height: 42rpx;
+			width: 42rpx;
+		}
+	}
 	.body {
+		
 		margin-top: 32rpx;
 		margin-left: 30rpx;
-
 		// 对话1
 		.guess-logo {
 			display: flex;
@@ -93,7 +129,7 @@
 			text-align: center;
 			line-height: 80rpx;
 			font-size: 30rpx;
-			margin-left: 330rpx;
+			margin-left: 300rpx;
 			margin-top: 16rpx;
 			background-size: 100% 100%;
 			background-repeat: no-repeat;
@@ -166,10 +202,5 @@
 				margin-right: 14rpx;
 			}
 		}
-	}
-	.massage{
-		width: 300rpx;
-		height: 720rpx;
-		background: #EA303D;
 	}
 </style>

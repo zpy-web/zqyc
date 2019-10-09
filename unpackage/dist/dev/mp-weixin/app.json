@@ -13,17 +13,21 @@
     "pages/user/account",
     "pages/user/cipone",
     "pages/user/openVip",
+    "pages/user/accountBind",
     "pages/guess/guessIndex",
     "pages/guess/inform",
     "pages/guess/massage",
     "pages/guess/systemT",
-    "pages/user/accountBind",
     "pages/guess/liveEvent",
     "pages/guess/gameInfo",
-    "pages/lo/lo"
+    "pages/guindex/guindex"
   ],
   "subPackages": [],
-  "window": {},
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "black",
+    "backgroundColor": "black"
+  },
   "usingComponents": {},
   "sitemapLocation": "sitemap.json"
 }

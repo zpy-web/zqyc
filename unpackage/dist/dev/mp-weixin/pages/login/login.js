@@ -192,14 +192,16 @@ var _default =
 {
   data: function data() {
     return {
+      // 密码
+      password: true,
       // 短信登陆
       duanxin: '../login/login2',
       // 注册
       register: '../login/register',
       // 找回密码
       findpwd: '../login/findpwd',
-      // 登录到个人主页
-      personal: '../user/personal' };
+      // 登录竞猜主页
+      guessIndex: '../guess/guessIndex' };
 
   } };exports.default = _default;
 
